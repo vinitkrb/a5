@@ -15,6 +15,7 @@ import {RatingModule} from 'primeng/rating';
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {TableModule} from 'primeng/table';
 import {OrganizationChartModule} from 'primeng/organizationchart';
+import {InplaceModule} from 'primeng/inplace';
 
 import { Module6RoutingModule } from './module6-routing.module';
 import { Module6Component } from './module6.component';
@@ -35,7 +36,8 @@ import { Module6Component } from './module6.component';
     RatingModule,
     ToggleButtonModule,
     TableModule,
-    OrganizationChartModule
+    OrganizationChartModule,
+    InplaceModule
   ],
   providers:[
     ConfirmationService

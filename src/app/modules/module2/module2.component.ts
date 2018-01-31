@@ -11,6 +11,7 @@ export class Module2Component implements OnInit {
   options: any;
 
   constructor() {
+
     this.data = {
       labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
       datasets: [
@@ -54,6 +55,7 @@ export class Module2Component implements OnInit {
           }
       ]
   }
+
   this.options = {
     title: {
         display: true,
@@ -70,6 +72,40 @@ export class Module2Component implements OnInit {
   ngOnInit() {
 
   }
+
+// d3 donut chart code 
+  public donutChartData = [{
+    id: 0,
+    label: 'water',
+    value: 20,
+    color: '#80ACCB',
+    iconImage: 'assets/water.jpeg'
+  }, {
+    id: 1,
+    label: 'land',
+    value: 20,
+    color: '#436018',
+    iconImage: 'assets/land.jfif'
+  }, {
+    id: 2,
+    label: 'sand',
+    value: 30,
+    color: '#D8AF82',
+    iconImage: 'assets/sand.jpeg'
+  }, {
+    id: 3,
+    label: 'grass',
+    value: 20,
+    color: 'green',
+    iconImage: 'assets/grass.jpeg'
+  }, {
+    id: 4,
+    label: 'earth',
+    value: 10,
+    color: '#223162',
+    iconImage: 'assets/earth.jpg'
+  }];
+
 
 
   // Bar chart using ng2-charts 
